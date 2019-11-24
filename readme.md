@@ -1,4 +1,4 @@
-# jquery-assert [![Build Status](https://travis-ci.com/elmccd/jquery-assert.svg?branch=master)](https://travis-ci.com/elmccd/jquery-assert)
+# jquery-assert [![Build Status](https://api.travis-ci.org/elmccd/jquery-assert.svg?branch=master)](https://travis-ci.com/elmccd/jquery-assert)
 
 > My superior module
 
