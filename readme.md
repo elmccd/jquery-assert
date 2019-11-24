@@ -26,8 +26,8 @@ $('body').assertOne().doSomething();
 
 ### UMD build
 ```html
-<script src="//code.jquery.com/jquery.min.js">
-<script src="/dist/jquery-assert.umd.min.js">
+<script src="//code.jquery.com/jquery.min.js" />
+<script src="/dist/jquery-assert.umd.min.js" />
 <script>
   $('body').assertOne().doSomething();
 </script>
