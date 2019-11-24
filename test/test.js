@@ -7,20 +7,23 @@ test('jquery plugin exists and can be installed', t => {
 	t.truthy($.fn.assert);
 });
 
-test('passes current jquery elements', t => {
+test('returns jquery object with the same elements', t => {
 	const $ = prepareJQueryWithAssertPluginAndDOM();
 
-	t.is($('p').length, 1);
-	t.is($('p').assert(1).length, 1);
+	const $ones = $('.one');
+
+	t.true($ones.assert(1) instanceof $);
+	t.true($ones.assertOne() instanceof $);
+	t.true($ones.assertMany() instanceof $);
+	t.true($ones.assertAtLeast(1) instanceof $);
+
+	t.is($ones.assert(1).length, 1);
+	t.is($ones.assertOne().length, 1);
+	t.is($ones.assertMany().length, 1);
+	t.is($ones.assertAtLeast(1).length, 1);
+
+	t.true($ones.is($ones.assert(1)));
+	t.true($ones.is($ones.assertOne()));
+	t.true($ones.is($ones.assertMany()));
+	t.true($ones.is($ones.assertAtLeast(1)));
 });
-
-test('throws exception on unexpected selector length', t => {
-	const $ = prepareJQueryWithAssertPluginAndDOM();
-
-	t.throws(() => {
-		$('p').assert(2);
-	}, {
-		message: 'Expected jQuery selector to return 2 elements. Got: 1'
-	});
-});
-
