@@ -8,10 +8,12 @@
 ## Install
 
 ```
-$ npm install jquery-assert
+$ npm install jquery-assert --save
 ```
 
 ## Usage
+
+### Modern
 
 ```js
 import jquery from 'jquery';
@@ -20,6 +22,16 @@ import jqueryAssert from 'jquery-assert';
 jquery.fn.extend(jqueryAssert);
 
 $('body').assertOne().doSomething();
+```
+
+### UMD build
+```html
+<script src="//code.jquery.com/jquery.min.js">
+<script src="/dist/jquery-assert.umd.min.js">
+<script>
+  $('body').assertOne().doSomething();
+</script>
+	
 ```
 
 
@@ -79,3 +91,9 @@ Equivalent to:
 ```js
 $('#unique').assertAtLeast(1);
 ```
+
+## Support
+
+Should work with any jQuery version. 
+
+Babel compiled for IE8+.
