@@ -27,7 +27,7 @@ module.exports = jquery => {
 			return this;
 		}
 
-		throw new Error('assert method must be called with a number of function');
+		throw new Error('Assert method must be called with a number of function');
 	};
 
 	jquery.fn.assertOne = function () {

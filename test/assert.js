@@ -4,6 +4,17 @@ import {prepareJQueryWithAssertPluginAndDOM} from './helpers';
 test('assert with number returns itself if correct', t => {
 	const $ = prepareJQueryWithAssertPluginAndDOM();
 	const $ones = $('.one');
+
+	t.throws(() => {
+		$ones.assert();
+	}, {
+		message: 'Assert method must be called with a number of function'
+	});
+});
+
+test('assert throw error if passed invalid argument', t => {
+	const $ = prepareJQueryWithAssertPluginAndDOM();
+	const $ones = $('.one');
 	const $twos = $('.two');
 
 	t.is($ones.assert(1).length, 1);
