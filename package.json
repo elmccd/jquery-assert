@@ -1,0 +1,29 @@
+{
+	"name": "jquery-assert",
+	"version": "0.0.0",
+	"description": "My superior module",
+	"license": "MIT",
+	"repository": "elmccd/jquery-assert",
+	"author": {
+		"name": "Maciej Dudzinski",
+		"email": "elmccd@gmail.com",
+		"url": "github.com/elmccd"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		""
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"ava": "^2.1.0",
+		"xo": "^0.24.0"
+	}
+}
