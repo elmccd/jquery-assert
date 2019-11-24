@@ -1,9 +1,11 @@
 'use strict';
 
-module.exports = (input, {postfix = 'rainbows'} = {}) => {
-	if (typeof input !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof input}`);
-	}
+module.exports = jquery => {
+	jquery.fn.assert = function (expected) {
+		if (this.length !== expected) {
+			throw new Error(`Expected jQuery selector to return ${expected} elements. Got: ${this.length}`);
+		}
 
-	return `${input} & ${postfix}`;
+		return this;
+	};
 };
