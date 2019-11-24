@@ -1,4 +1,4 @@
-# jquery-assert [![Build Status](https://api.travis-ci.org/elmccd/jquery-assert.svg?branch=master)](https://travis-ci.com/elmccd/jquery-assert)
+# jquery-assert [![Build Status](https://api.travis-ci.org/elmccd/jquery-assert.svg?branch=master)](https://travis-ci.com/elmccd/jquery-assert) [![codecov](https://codecov.io/gh/elmccd/jquery-assert/branch/master/graph/badge.svg)](https://codecov.io/gh/elmccd/jquery-assert)
 
 > My superior module
 
