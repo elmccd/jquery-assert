@@ -16,10 +16,10 @@ $ npm install jquery-assert --save
 ### Modern
 
 ```js
-import jquery from 'jquery';
+import $ from 'jquery';
 import jqueryAssert from 'jquery-assert';
 
-jquery.fn.extend(jqueryAssert);
+$.fn.extend(jqueryAssert);
 
 $('body').assertOne().doSomething();
 ```
@@ -46,10 +46,6 @@ your front-end application errors, including the one thrown by this library.
 
 If you are not tracking your errors yet have a look at some services like: 
 sentry.io, trackjs.com, rollbar.com or others.
-
-## jQuery not fail fast pitfalls
-
-TBD
 
 ## API
 
