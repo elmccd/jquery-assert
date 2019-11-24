@@ -1,6 +1,6 @@
 {
 	"name": "jquery-assert",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Assert number of elements in a jQuery selector in a Fail Fast manner",
 	"license": "MIT",
 	"repository": "elmccd/jquery-assert",
