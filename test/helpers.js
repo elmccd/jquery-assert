@@ -1,6 +1,6 @@
 import {JSDOM} from 'jsdom';
 import jquery from 'jquery';
-import jqueryAssert from '..';
+import jqueryAssert from '../src';
 
 export const createDomFragment = () => {
 	return new JSDOM(`
@@ -23,7 +23,7 @@ export const prepareJQueryWithAssertPluginAndDOM = () => {
 	const $ = jquery(createDomFragment().window);
 
 	// Install plugin
-	jqueryAssert($);
+	$.fn.extend(jqueryAssert);
 
 	return $;
 };

@@ -24,7 +24,7 @@
 		"test": "eslint ./ && nyc ava"
 	},
 	"files": [
-		"index.js"
+		"src/index.js"
 	],
 	"keywords": [
 		""
